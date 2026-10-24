@@ -281,7 +281,7 @@ open class LandscapeBatteryKim(private val context: Context, frameColor: Int) :
     private fun batteryColorForLevel(level: Int): Int {
         return when {
             charging -> 0xFF63D680.toInt()
-            powerSaveEnabled -> 0xFFFCD84E.toInt()
+            powerSaveEnabled -> 0xFF98B3F6.toInt()
             level > CRITICAL_LEVEL -> fillColor
             level >= 0 -> 0xFFFF3030.toInt()
             else -> getColorForLevel(level)
